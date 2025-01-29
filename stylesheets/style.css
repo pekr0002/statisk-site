@@ -9,3 +9,95 @@ img {
   height: auto;
   display: block;
 }
+
+/* generalt css */
+body {
+  background-color: #f8f4ed;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+main {
+  padding: 20px;
+  font-family: "Noto Sans Display", sans-serif;
+}
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+h2 {
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.logo {
+  text-align: center;
+  font-family: "Candal", sans-serif;
+}
+.logo-r {
+  color: red;
+  text-transform: uppercase;
+}
+
+.kategorier {
+  background-color: #ffffff;
+}
+.kategorier a {
+  background-color: rgb(251, 31, 31);
+  padding: 20px;
+  border-radius: 2px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.kategorier a:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.product {
+  transition: 0.5s;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+.product:hover {
+  transition: 0.5s;
+}
+
+.udsolgt {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  place-content: center;
+  color: white;
+  grid-row: 1;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.product img {
+  margin-bottom: 20px;
+}
+
+.tilbud {
+  color: red;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+.old_price {
+  text-decoration: line-through;
+}
+
+/* computerview */
+@media (min-width: 800px) {
+}

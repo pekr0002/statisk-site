@@ -3,7 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/layout.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">Fashion<span class="logo-r">r</span>us</a>
+      </div>
+    </header>
+    <main>
+      <h1>Products</h1>
+      <div class="product_list_container">
+        <a href="product.html" class="product">
+          <img src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp" alt="Big Cat Backpack Black" />
+          <h4>Big Cat Backpack Black</h4>
+          <div class="price">
+            <p>1299DKK</p>
+          </div>
+        </a>
+        <!-- tilbud -->
+        <a href="product.html" class="product">
+          <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="Deck Navy Blue Backpack" />
+          <h4>Deck Navy Blue Backpack</h4>
+          <div class="price">
+            <p class="old_price">1299</p>
+            <p class="tilbud active">
+              714dkk
+              <!-- tilbudsprocent-->
+              (55% OFF)
+            </p>
+          </div>
+        </a>
+        <!-- udsolgt -->
+        <a href="product.html" class="product">
+          <img src="https://kea-alt-del.dk/t7/images/webp/640/1532.webp" alt="Grey Leaping Cat T-shirt" />
+          <h4>Grey Leaping Cat T-shirt</h4>
+          <div class="price"><p>899kr</p></div>
+        </a>
+
+        <!-- udsolgt og tilbud -->
+        <a href="product.html" class="product">
+          <img src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="Blue T20 Indian Cricket Jersey" />
+          <h4>Blue T20 Indian Cricket Jersey</h4>
+          <div class="price">
+            <p class="old_price">1595</p>
+            <p class="tilbud active">
+              100kr
+              <!-- tilbudsprocent-->
+              (28% OFF)
+            </p>
+          </div>
+          <div class="udsolgt">Sold Out</div>
+        </a>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
 </html>
