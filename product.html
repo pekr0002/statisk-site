@@ -3,7 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/layout.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body id="productpage">
+    <header>
+      <div class="logo"><a href="index.html">Fashion R us</a></div>
+    </header>
+    <main>
+      <!-- udsolgt og tilbud -->
+      <div class="grid_1-1 product">
+        <img src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="Blue T20 Indian Cricket Jersey" />
+        <div class="order_information">
+          <h1>Blue T20 Indian Cricket Jersey</h1>
+          <div class="price">
+            <p class="old_price">1595dkk</p>
+            <p class="tilbud active">
+              100kr
+              <!-- tilbudsprocent-->
+              (28% OFF)
+            </p>
+          </div>
+
+          <!-- vælg størrelse -->
+          <form>
+            <input type="radio" id="small" name="size" value="SMALL" />
+            <label for="small">S</label><br />
+            <input type="radio" id="medium" name="size" value="MEDIUM" />
+            <label for="medium">M</label><br />
+            <input type="radio" id="large" name="size" value="LARGE" />
+            <label for="large">L</label>
+          </form>
+          <!-- <div class="udsolgt">Out of stock</div> -->
+          <div class="udsolgt"><a>Out of stock</a></div>
+
+          <dl class="product_information">
+            <dt>gender</dt>
+            <dd>Male</dd>
+            <dt>category</dt>
+            <dd>Apparel</dd>
+            <dt>season</dt>
+            <dd>Summer</dd>
+            <dt>Model name</dt>
+            <dd>Blue T20 Indian Cricket Jersey</dd>
+            <dt>Color</dt>
+            <dd>Blue</dd>
+            <dt>Brand</dt>
+            <dd>Nike</dd>
+            <dt>production year</dt>
+            <dd>2013</dd>
+            <dt>usage</dt>
+            <dd>sports</dd>
+          </dl>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

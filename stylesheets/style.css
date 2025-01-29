@@ -70,7 +70,7 @@ a {
   transition: 0.5s;
 }
 
-.udsolgt {
+#productlist .udsolgt {
   margin: 10px;
   padding: 10px;
   background-color: rgb(0, 0, 0);
@@ -79,6 +79,31 @@ a {
   color: white;
   grid-row: 1;
   position: absolute;
+  text-transform: uppercase;
+}
+
+.udsolgt {
+  text-transform: uppercase;
+}
+
+ul {
+  margin: 40px 20px;
+  text-transform: uppercase;
+}
+dt {
+  font-size: large;
+}
+dd {
+  margin: 0 0 10px 0;
+}
+
+.udsolgt a {
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(116, 116, 116);
+  display: grid;
+  place-content: center;
+  color: white;
   text-transform: uppercase;
 }
 
@@ -98,6 +123,9 @@ a {
   text-decoration: line-through;
 }
 
+.product {
+  padding: 10px;
+}
 /* computerview */
 @media (min-width: 800px) {
 }
