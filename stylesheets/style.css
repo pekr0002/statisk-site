@@ -10,46 +10,79 @@ img {
   display: block;
 }
 
+html {
+  --primary: #ff4400;
+  --sort: #272626;
+}
 /* generalt css */
 body {
-  background-color: #f8f4ed;
-  max-width: 1500px;
-  margin: 0 auto;
+  background-color: #ffffff;
+  font-family: "Noto Sans Display", sans-serif;
 }
 main {
   padding: 20px;
-  font-family: "Noto Sans Display", sans-serif;
+  min-height: 92vh;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 h1 {
+  margin: 5px 0 50px 0;
   font-size: 50px;
   text-transform: uppercase;
   font-family: "Noto Sans Display", sans-serif;
 }
 
 h2 {
+  margin: 30px 0;
   font-family: "Noto Sans Display", sans-serif;
   font-size: 30px;
   text-transform: uppercase;
 }
+header {
+  position: sticky;
+  display: grid;
+  padding: 5px 0 0 20px;
+  z-index: 10;
+  text-transform: uppercase;
+}
 
-.logo {
+header .logo a {
+  padding: 10px;
+  background-color: var(--primary);
+}
+header .logo {
   text-align: center;
   font-family: "Candal", sans-serif;
 }
 .logo-r {
-  color: red;
   text-transform: uppercase;
+  font-size: larger;
+}
+footer {
+  text-transform: uppercase;
+  background-color: var(--sort);
+}
+footer .logo {
+  padding: 10px;
+  font-family: "Candal", sans-serif;
+}
+footer .logo a {
+  color: white;
 }
 
 .kategorier {
-  background-color: #ffffff;
+  padding: 1px;
 }
 .kategorier a {
-  background-color: rgb(251, 31, 31);
-  padding: 20px;
-  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  padding: 12vh 10px;
+  text-align: center;
   font-weight: 800;
   text-transform: uppercase;
+  font-size: 25px;
+}
+.kategorier a:hover {
+  background-color: rgb(255, 241, 241);
 }
 
 a {
@@ -57,8 +90,20 @@ a {
   text-decoration: none;
 }
 
-.kategorier a:hover {
-  background-color: rgb(255, 0, 0);
+.divider {
+  height: 1px;
+  background-color: var(--sort);
+  margin: 40px 0;
+}
+
+.colorbox {
+  background-color: var(--sort);
+  color: white;
+}
+
+.colorbox h2,
+.colorbox p {
+  margin: 5px 5px;
 }
 
 .product {
@@ -68,6 +113,12 @@ a {
 }
 .product:hover {
   transition: 0.5s;
+}
+
+.product img {
+  width: 282.5px;
+  height: auto;
+  margin: 0 auto;
 }
 
 #productlist .udsolgt {
@@ -107,12 +158,8 @@ dd {
   text-transform: uppercase;
 }
 
-.product img {
-  margin-bottom: 20px;
-}
-
 .tilbud {
-  color: red;
+  color: var(--primary);
   display: none;
 }
 
@@ -128,4 +175,8 @@ dd {
 }
 /* computerview */
 @media (min-width: 800px) {
+  #productpage .product img {
+    width: 40vw;
+    height: auto;
+  }
 }
