@@ -5,17 +5,16 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
   .then((data) => {
     productContainer.innerHTML = `
 
-        <img src="https://kea-alt-del.dk/t7/images/webp/640/${productId}.webp" alt="Blue T20 Indian Cricket Jersey" />
-        <div class="order_information">
+        <img src="https://kea-alt-del.dk/t7/images/webp/640/${productId}.webp" alt="${data.productdisplayname} " />
+         
+        <div class="order_information"> 
+        <h4>${data.brandname}</h4>
           <h1>${data.productdisplayname} </h1>
           <div class="price">
-            <p class="old_price">${data.price}</p>
-            <p class="tilbud active">
-              100kr
-              (28% OFF)
-            </p>
+            <p>${data.price}dkk</p>
+    
           </div>
-
+     
           <form>
             <input type="radio" id="small" name="size" value="SMALL" />
             <label for="small">S</label><br />
@@ -30,21 +29,15 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
 
           <dl class="product_information">
             <dt>gender</dt>
-            <dd>Male</dd>
+            <dd>${data.gender}</dd>
             <dt>category</dt>
-            <dd>Apparel</dd>
+            <dd>${data.category}</dd>
             <dt>season</dt>
-            <dd>Summer</dd>
-            <dt>Model name</dt>
-            <dd>Blue T20 Indian Cricket Jersey</dd>
-            <dt>Color</dt>
-            <dd>Blue</dd>
-            <dt>Brand</dt>
-            <dd>Nike</dd>
+            <dd>${data.season}</dd>
             <dt>production year</dt>
-            <dd>2013</dd>
+            <dd>${data.productionyear}</dd>
             <dt>usage</dt>
-            <dd>sports</dd>
+            <dd>${data.usagetype}</dd>
           </dl>
         </div>
       </div>`;
