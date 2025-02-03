@@ -22,7 +22,7 @@ body {
 main {
   padding: 20px;
   min-height: 92vh;
-  max-width: 1280px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 h1 {
@@ -39,7 +39,6 @@ h2 {
   text-transform: uppercase;
 }
 header {
-  position: sticky;
   display: grid;
   padding: 5px 0 0 20px;
   z-index: 10;
@@ -80,9 +79,10 @@ footer .logo a {
   font-weight: 800;
   text-transform: uppercase;
   font-size: 25px;
+  border: var(--sort) solid 2px;
 }
 .kategorier a:hover {
-  background-color: rgb(255, 241, 241);
+  background-color: var(--primary);
 }
 
 a {
@@ -94,11 +94,6 @@ a {
   height: 1px;
   background-color: var(--sort);
   margin: 40px 0;
-}
-
-.colorbox {
-  background-color: var(--sort);
-  color: white;
 }
 
 .colorbox h2,

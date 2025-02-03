@@ -1,4 +1,8 @@
-let productId = 1538;
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const productId = urlParams.get("id");
+// console.log("categories:", categories);
+
 let productContainer = document.querySelector(".product");
 fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
   .then((response) => response.json())
@@ -9,6 +13,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
          
         <div class="order_information"> 
         <h4>${data.brandname}</h4>
+        <div>${data.usagetype} - ${data.articletype}</div>
           <h1>${data.productdisplayname} </h1>
           <div class="price">
             <p>${data.price}dkk</p>
