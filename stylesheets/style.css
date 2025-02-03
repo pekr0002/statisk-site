@@ -22,7 +22,7 @@ body {
 main {
   padding: 20px;
   min-height: 92vh;
-  max-width: 1280px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 h1 {
@@ -179,4 +179,38 @@ dd {
     width: 40vw;
     height: auto;
   }
+}
+
+.kategorier {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.kategorier a {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.kategorier a:hover {
+  background-color: var(--primary);
+}
+
+.kategorier img {
+  width: 358px;
+}
+
+#hero {
+  min-height: 92vh;
+  background-color: var(--primary);
+}
+
+.our_mission {
+  margin: 100px 0px;
+}
+
+.our_mission h2 {
+  font-size: 85px;
+  margin: 0;
 }
