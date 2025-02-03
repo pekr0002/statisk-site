@@ -7,6 +7,10 @@
   display: grid;
 }
 
+.kategorier {
+  display: grid;
+  gap: 10px;
+}
 .product_list_container {
   display: grid;
   grid-template-columns: 1fr;
@@ -20,7 +24,6 @@
 .product {
   /* display: grid; */
   /* grid-template-rows: subgrid; */
-
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 5;
@@ -44,9 +47,9 @@ form {
 }
 
 @media (min-width: 800px) {
-  /* .kategorier {
+  .kategorier {
     grid-template-columns: repeat(3, 1fr);
-  } */
+  }
 
   .product_list_container {
     grid-template-columns: repeat(4, 1fr);
