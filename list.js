@@ -16,16 +16,17 @@ function showList(products) {
       
           <div class="billedegrid">
             <img class="billede" src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="${product.productdisplayname}" />
-            <div class="billede tilbud-label ${product.discount && "active"}">SALE</div>
+            <div class="billede tilbud-label ${product.discount && "show"}">SALE</div>
+            <div class="billede udsolgt-label ${product.discount && "show"}">Sold Out</div>
          </div>
       
           <h4>${product.productdisplayname}</h4>
           <div>${product.usagetype} - ${product.articletype}</div>
           <div class="price">
             <p class="${product.discount && "old_price"}">${product.price}dkk</p>
-
-
-            <p class="tilbud ${product.discount && "active"}">
+            
+            
+            <p class="tilbud ${product.discount && "show"}">
             ${Math.ceil(product.price - product.price * (product.discount / 100))}DKK (${product.discount}% OFF)</p>
             </div>
             </a>`

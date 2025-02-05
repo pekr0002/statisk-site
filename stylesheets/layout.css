@@ -21,6 +21,14 @@
   gap: 20px; */
 }
 
+.billedegrid {
+  display: grid;
+}
+.billede {
+  grid-column: 1;
+  grid-row: 1;
+}
+
 .product {
   /* display: grid; */
   /* grid-template-rows: subgrid; */
