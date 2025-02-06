@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/style.css" />
     <link rel="stylesheet" href="stylesheets/layout.css" />
+    <link rel="stylesheet" href="stylesheets/nav.css" />
+    <link rel="stylesheet" href="stylesheets/footer.css" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Candal&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
@@ -12,30 +21,56 @@
   </head>
   <body>
     <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.svg" alt="" />
+        </a>
+      </div>
       <nav>
-        <div class="logo">
-          <a href="index.html">Fashion<span class="logo-r">r</span>us</a>
+        <div class="menu">
+          <!-- indhold fra js -->
+        </div>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
       </nav>
     </header>
-
+    <section class="hero">
+      <h1>Fashionrus</h1>
+      <p>Performance meets style — gear up for every move with FashionRus Active.</p>
+    </section>
     <main>
-      <h2>Categories</h2>
-      <p>where do you want to start?</p>
+      <h1>Categories</h1>
       <div class="kategorier">
-        <!-- <a href="productlist.html">Accessories<img src="scary.png" alt="" /> </a>
-        <a href="productlist.html">Apparel<img src="scary.png" alt="" /></a>
-        <a href="productlist.html">Footwear<img src="scary.png" alt="" /></a>
-        <a href="productlist.html">Free Items<img src="scary.png" alt="" /></a>
-        <a href="productlist.html">Personal Care<img src="scary.png" alt="" /></a>
-        <a href="productlist.html">Sporting Goods<img src="scary.png" alt="" /></a> -->
+        <!-- indhold fra js -->
       </div>
     </main>
     <footer>
-      <div class="logo">
-        <a href="index.html">Fashion<span class="logo-r">r</span>us</a>
+      <div class="footer_indhold grid_1-1">
+        <div class="footer_logo">
+          <a href="index.html"> <img src="img/logo.svg" alt="Logo" /></a>
+        </div>
+        <div>
+          <h2>About Us:</h2>
+          <p>Where bold style meets sustainable fashion.</p>
+          <h2>Contact Us:</h2>
+          <p>Mail: <a href="mailito:support@fashionrus.com">support@fashionrus.com</a></p>
+          <p>Telephone: <a href="tel:12345678">+12345678</a></p>
+        </div>
+        <div>
+          <h2>join our newsletter</h2>
+          <form>
+            <label for="email">Your Email:</label>
+            <input type="email" id="fname" name="fname" /><br /><br />
+            <input id="subscribe" type="submit" value="Subscribe" />
+          </form>
+        </div>
       </div>
+      <div class="footer_bottom"></div>
     </footer>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

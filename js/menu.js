@@ -12,3 +12,12 @@ function menuClick() {
   burger.classList.remove("active");
   nav.classList.remove("active");
 }
+
+fetch(`https://kea-alt-del.dk/t7/api/categories/`)
+  .then((response) => response.json())
+  .then((data) => showMenu(data));
+
+function showMenu(categories) {
+  const markup = categories.map((category) => `<a href="productlist.html?categories=${category.category}">${category.category}</a>`).join("");
+  menu.innerHTML = markup;
+}
