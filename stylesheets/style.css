@@ -11,8 +11,9 @@ img {
 }
 
 html {
-  --primary: #ff4400;
+  --primary: #780000;
   --sort: #272626;
+  --tilbud: #c1121f;
 }
 /* generalt css */
 body {
@@ -21,15 +22,14 @@ body {
 }
 main {
   padding: 20px;
-  min-height: 92vh;
-  max-width: 1500px;
   margin: 0 auto;
 }
 h1 {
-  margin: 5px 0 50px 0;
+  margin: 5px 0 25px 0;
   font-size: 50px;
   text-transform: uppercase;
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
 }
 
 h2 {
@@ -38,28 +38,9 @@ h2 {
   font-size: 30px;
   text-transform: uppercase;
 }
-header {
-  display: grid;
-  padding: 5px 0 0 20px;
-  z-index: 10;
-  text-transform: uppercase;
-}
-
-header .logo a {
-  padding: 10px;
-  background-color: var(--primary);
-}
-header .logo {
-  text-align: center;
-  font-family: "Candal", sans-serif;
-}
-.logo-r {
-  text-transform: uppercase;
-  font-size: larger;
-}
 footer {
   text-transform: uppercase;
-  background-color: var(--sort);
+  background-color: white;
 }
 footer .logo {
   padding: 10px;
@@ -69,20 +50,52 @@ footer .logo a {
   color: white;
 }
 
+.hero {
+  padding: 40px;
+  background: radial-gradient(rgb(255, 0, 0), var(--primary));
+  background-size: 400% 400%;
+}
+
+.hero h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 90px;
+  color: white;
+}
+
+.hero p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  color: white;
+}
 .kategorier {
   padding: 1px;
 }
 .kategorier a {
-  background-color: rgb(255, 255, 255);
   padding: 12vh 10px;
   text-align: center;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 25px;
   border: var(--sort) solid 2px;
+  border-radius: 4px;
+  transition: 0.2s;
+  background-color: rgb(206, 206, 206);
 }
 .kategorier a:hover {
-  background-color: var(--primary);
+  background-color: #b53a3a;
+  transition: 0.2s;
+}
+
+button,
+#subscribe {
+  background-color: var(--sort);
+  color: white;
+  background-color: rgb(0, 0, 0);
+  font-size: 20px;
+  color: white;
+  padding: 5px 10px;
+  margin: 20px 0;
+  border: none;
 }
 
 a {
@@ -102,31 +115,16 @@ a {
 }
 
 .product {
-  transition: 0.5s;
   text-align: center;
   font-family: "Quicksand", sans-serif;
-}
-.product:hover {
-  transition: 0.5s;
-}
-
-/* .product img {
-  width: 282.5px;
-  height: auto;
-  margin: 0 auto;
-} */
-
-/* #productlist .udsolgt {
-  margin: 10px;
+  box-sizing: border-box;
   padding: 10px;
-  background-color: rgb(0, 0, 0);
-  display: grid;
-  place-content: center;
-  color: white;
-  grid-row: 1;
-  position: absolute;
-  text-transform: uppercase;
-} */
+  transition: 0.2s;
+}
+#productlist .product:hover {
+  background-color: rgb(246, 246, 246);
+  transition: 0.2s;
+}
 
 ul {
   margin: 40px 20px;
@@ -145,7 +143,7 @@ p {
 
 .tilbud-label {
   place-self: start end;
-  background-color: red;
+  background-color: var(--tilbud);
   padding: 5px 10px;
   font-size: small;
   color: white;
@@ -160,8 +158,10 @@ p {
   font-size: small;
   color: white;
   display: none;
+  margin: 5px 0;
   text-transform: uppercase;
 }
+
 .udsolgt-label a,
 .basket a {
   color: white;
@@ -175,7 +175,7 @@ p {
 }
 
 .tilbud {
-  color: var(--primary);
+  color: var(--tilbud);
   display: none;
 }
 .price p {
@@ -192,9 +192,6 @@ p {
   text-decoration: line-through;
 }
 
-.product {
-  padding: 10px;
-}
 /* computerview */
 @media (min-width: 800px) {
   #productpage .product img {

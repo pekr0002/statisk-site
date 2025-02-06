@@ -9,67 +9,58 @@
 
     <link rel="stylesheet" href="stylesheets/style.css" />
     <link rel="stylesheet" href="stylesheets/layout.css" />
+    <link rel="stylesheet" href="stylesheets/nav.css" />
+    <link rel="stylesheet" href="stylesheets/footer.css" />
+
     <title>Product</title>
   </head>
   <body id="productpage">
     <header>
       <div class="logo">
-        <a href="index.html">Fashion<span class="logo-r">r</span>us</a>
+        <a href="index.html">
+          <img src="img/logo.svg" alt="" />
+        </a>
       </div>
+      <nav>
+        <div class="menu">
+          <!-- indhold fra js -->
+        </div>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
     </header>
     <main>
       
-      <div class="grid_1-1 product">  <!--  
-        <img src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="Blue T20 Indian Cricket Jersey" />
-        <div class="order_information">
-            
-            
-          <h1>Blue T20 Indian Cricket Jersey</h1>
-          <div class="price">
-            <p class="old_price">1595dkk</p>
-            <p class="tilbud active">
-              100kr
-              (28% OFF)
-            </p>
-          </div>
-
-          <form>
-            <input type="radio" id="small" name="size" value="SMALL" />
-            <label for="small">S</label><br />
-            <input type="radio" id="medium" name="size" value="MEDIUM" />
-            <label for="medium">M</label><br />
-            <input type="radio" id="large" name="size" value="LARGE" />
-            <label for="large">L</label>
-          </form>
-          <div class="udsolgt"><a>Out of stock</a></div>
-
-          <div class="divider"></div>
-
-          <dl class="product_information">
-            <dt>gender</dt>
-            <dd>Male</dd>
-            <dt>category</dt>
-            <dd>Apparel</dd>
-            <dt>season</dt>
-            <dd>Summer</dd>
-            <dt>Model name</dt>
-            <dd>Blue T20 Indian Cricket Jersey</dd>
-            <dt>Color</dt>
-            <dd>Blue</dd>
-          
-            <dt>production year</dt>
-            <dd>2013</dd>
-            <dt>usage</dt>
-            <dd>sports</dd>
-          </dl>
-        </div>
-      </div> -->
+      <div class="grid_1-1 product"> 
+                <!-- indhold fra js -->
     </main>
     <footer>
-      <div class="logo">
-        <a href="index.html">Fashion<span class="logo-r">r</span>us</a>
+      <div class="footer_indhold grid_1-1">
+        <div class="footer_logo">
+          <a href="index.html"> <img src="img/logo.svg" alt="Logo" /></a>
+        </div>
+        <div>
+          <h2>About Us:</h2>
+          <p>Where bold style meets sustainable fashion.</p>
+          <h2>Contact Us:</h2>
+          <p>Mail: <a href="mailito:support@fashionrus.com">support@fashionrus.com</a></p>
+          <p>Telephone: <a href="tel:12345678">+12345678</a></p>
+        </div>
+        <div>
+          <h2>join our newsletter</h2>
+          <form>
+            <label for="email">Your Email:</label>
+            <input type="email" id="fname" name="fname" /><br /><br />
+            <input id="subscribe" type="submit" value="Subscribe" />
+          </form>
+        </div>
       </div>
+      <div class="footer_bottom"></div>
     </footer>
-    <script src="./single.js" defer></script>
+    <script src="js/single.js" defer></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

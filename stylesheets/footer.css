@@ -1,0 +1,26 @@
+footer {
+  background-color: #669bbc;
+}
+
+footer img {
+  margin: auto;
+  min-width: 350px;
+  width: 30%;
+}
+footer p,
+footer h2 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.footer_indhold {
+  margin: 40px;
+}
+
+.footer_bottom {
+  background-color: #003049;
+  height: 50px;
+}
+/* computerview */
+@media (min-width: 800px) {
+}
